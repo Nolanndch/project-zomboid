@@ -40,7 +40,7 @@ def afficher_map(surface, offset_x, offset_y):
         for tile_y, ligne in enumerate(tiles):
             for tile_x, tuile in enumerate(ligne):
 
-                # position des tiles
+                # position des tiles a dessiner
                 tile_pos_x = (
                     cx * settings.taille_chunk + tile_x
                 ) * settings.tile_size - offset_x
@@ -58,6 +58,16 @@ def afficher_map(surface, offset_x, offset_y):
                     color = settings.BLEU
                 if tuile == "route":
                     color = settings.NOIR
+                if tuile == "maison":
+                    color = settings.ROUGE
+                if tuile == "maisonette":
+                    color = settings.ROUGE_CLAIR
+                if tuile == "appartement":
+                    color = settings.BLANC
+                if tuile == "parc":
+                    color = settings.VERT_CLAIR
+                if tuile == "arbre":
+                    color = settings.VERT_FONCE
 
                 pygame.draw.rect(
                     surface,

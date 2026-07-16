@@ -8,7 +8,7 @@ class Player:
         self.strengh = strengh
         self.x = x
         self.y = y
-        self.vitesse = 200
+        self.vitesse = 100
 
     def move(self, direction, delta):
         if direction == "up":

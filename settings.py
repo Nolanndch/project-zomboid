@@ -10,7 +10,7 @@ ecran_y = hauteur_ecran // 2
 clock = pygame.time.Clock()
 
 taille_map = 200
-tile_size = 20
+tile_size = 100
 
 taille_chunk = 16
 
@@ -18,9 +18,9 @@ game_state = "game"
 
 seed = 0
 
-diviseur_noise = 500
+diviseur_noise = 100
 
-taille_joueur = tile_size
+taille_joueur = 20
 
 
 class Tile:
@@ -30,6 +30,11 @@ class Tile:
     VILLE = "ville"
     CAMPAGNE = "campagne"
     ROUTE = "route"
+    MAISON = "maison"
+    MAISONETTE = "maisonette"
+    APPART = "appartement"
+    PARC = "parc"
+    ARBRE = "arbre"
 
 
 # couleurs :

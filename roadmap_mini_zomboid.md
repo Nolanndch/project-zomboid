@@ -42,7 +42,7 @@ pip install pygame noise
 
 ### À coder
 - [✅] Découper la map en **chunks** (zones 16×16 tuiles)
-- [ ] Génération de routes (grille régulière ou bruit de Perlin)
+- [✅] Génération de routes (grille régulière ou bruit de Perlin)
 - [ ] Placement de bâtiments rectangulaires (murs + 1 porte)
 - [✅] Seed reproductible : `random.seed(42)` → même seed = même map
 - [✅] Charger uniquement les chunks proches du joueur (perf)
