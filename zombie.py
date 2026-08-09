@@ -19,9 +19,10 @@ class zombie :
     
     def attaquer(self,cible):
         cible.life - self.strengh 
-        
+    
     def __repr__(self):
         return f"pos : {self.x,self.y} /n life : {self.life}"
     
     def __str__(self):
         return f"pos : {self.x,self.y} /n life : {self.life}"
+    
